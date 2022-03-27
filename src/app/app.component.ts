@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  numbers = [1, 2, 3, 4, 5];
+  //Only for directives demo only! With pipes we will filter arrays!
+  //We can´t have two directives inside (like an if inside a for)
+  //numbers = [1, 2, 3, 4, 5];
+  oddNumbers = [1,3,5];
+  evenNumbers = [2,4];
   onlyOdd = false;
 }
