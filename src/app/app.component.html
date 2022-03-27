@@ -5,6 +5,12 @@
         class="btn btn-primary"
         (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
       <br><br>
+      <button
+        class="btn btn-danger"
+        (click)="onChangeShowAll()"
+        [ngClass] = "{ 'btn-danger': showAll, 'btn-primary': !showAll }"
+        >{{ showAllText }}</button>
+      <br><br>
       <div *ngIf="onlyOdd">
         <ul class="list-group">
           <li
@@ -24,7 +30,7 @@
         </ul>
       </div>
       <hr>
-      <div>
+      <div *appToggle="showAll">
         <ul class="list-group">
           <li
             class="list-group-item"

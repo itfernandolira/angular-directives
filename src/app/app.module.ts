@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
+import { ToggleDirective } from './toggle.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    ToggleDirective
   ],
   imports: [
     BrowserModule,

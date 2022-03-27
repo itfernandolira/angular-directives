@@ -12,4 +12,14 @@ export class AppComponent {
   oddNumbers = [1,3,5];
   evenNumbers = [2,4];
   onlyOdd = false;
+  showAll = false;
+  showAllText = "Hide all numbers";
+
+  onChangeShowAll() {
+    this.showAll = !this.showAll;
+    if (this.showAll)
+      this.showAllText = "Show all numbers";
+    else
+      this.showAllText = "Hide all numbers";
+  }
 }
