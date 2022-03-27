@@ -35,7 +35,8 @@
           </li>
         </ul>
       </div>
-      <p appHighlight>Texto com fundo azul com o Renderer para não manipular o DOM diretamente!</p>
+      <!-- Attributes without [], it's ok.. like [highlightColor]="'red'" -->
+      <p appHighlight defaultColor="cyan" highlightColor="red">Texto com fundo azul com o Renderer para não manipular o DOM diretamente!</p>
     </div>
   </div>
 </div>
