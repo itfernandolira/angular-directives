@@ -23,6 +23,18 @@
           </li>
         </ul>
       </div>
+      <hr>
+      <div>
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            [ngClass]="{odd: number % 2 == 1}"
+            [ngStyle]="{backgroundColor: number % 2 == 1 ? 'yellow' : 'transparent'}"
+            *ngFor="let number of numbers">
+            {{ number }}
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
