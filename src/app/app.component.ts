@@ -14,6 +14,7 @@ export class AppComponent {
   onlyOdd = false;
   showAll = false;
   showAllText = "Hide all numbers";
+  defaultValue = 1;
 
   onChangeShowAll() {
     this.showAll = !this.showAll;

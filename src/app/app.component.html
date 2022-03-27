@@ -11,6 +11,25 @@
         [ngClass] = "{ 'btn-danger': showAll, 'btn-primary': !showAll }"
         >{{ showAllText }}</button>
       <br><br>
+      <button
+      class="btn btn-info"
+      (click)="defaultValue=1"
+      >1</button>
+      <button
+      class="btn btn-info ms-2"
+      (click)="defaultValue=5"
+      >5</button>
+      <button
+      class="btn btn-info ms-2"
+      (click)="defaultValue=10"
+      >10</button>
+     <br><br>
+     <div [ngSwitch]="defaultValue">
+      <p *ngSwitchCase="1">Value is 1</p>
+      <p *ngSwitchCase="5">Value is 5</p>
+      <p *ngSwitchCase="10">Value is 10</p>
+      <p *ngSwitchDefault>Value is default</p>
+     </div>
       <div *ngIf="onlyOdd">
         <ul class="list-group">
           <li
